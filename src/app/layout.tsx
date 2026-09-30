@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description: "Upload scanned student assignments from your school MFD and auto-correct them with OCR",
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className="h-full antialiased dark">
       <head>
