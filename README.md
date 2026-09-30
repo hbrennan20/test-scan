@@ -1,14 +1,15 @@
-# Scan
+# Grade
 
-Upload scanned documents from school MFDs (multi-function devices) and extract text via OCR.
+Upload scanned student assignments from school MFDs and auto-correct with OCR.
 
-Built with Next.js 16 + shadcn/ui + Tesseract OCR.
+Built for Irish primary & secondary teachers. Inter type, blue tech palette.
 
 ## Tech
 
 - **Next.js 16** — App router, Turbopack
-- **shadcn/ui** — Card, Table, Badge, Dialog components
-- **Tesseract** — Server-side OCR via system `tesseract`
+- **shadcn/ui** — Card, Table, Badge components
+- **Inter** typeface by Rasmus Andersson
+- **Tesseract** — Server-side OCR
 
 ## Quickstart
 
@@ -22,6 +23,6 @@ npm run dev      # http://localhost:3000
 `POST /api/ocr` — upload an image, get back extracted text.
 
 ```bash
-curl -F "file=@scan.jpeg" http://localhost:3000/api/ocr
+curl -F "file=@assignment.jpeg" http://localhost:3000/api/ocr
 # → { "text": "extracted content..." }
 ```
